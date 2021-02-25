@@ -1,0 +1,22 @@
+.navMenuRight {
+    color: white;
+    font-size: 12px;
+    
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.navMenuRight  li {
+    padding: 0px 5px;
+    border-left: 0.1px solid rgb(240, 159, 148);
+}
+.navMenuRight li:nth-child(1) {
+    border: 0;
+}
+
+.navMenuRight li a {
+    color: white;
+}
+
+

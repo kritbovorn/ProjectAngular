@@ -1,0 +1,22 @@
+.navMenuLeft {
+    color: white;
+    font-size: 12px;
+    display: flex;
+    
+}
+
+.navMenuLeft  li {
+    padding: 0px 5px;
+    border-left: 0.1px solid rgb(240, 159, 148);
+}
+.navMenuLeft li:nth-child(1) {
+    border: 0;
+}
+.navMenuLeft li:nth-child(6), .navMenuLeft li:nth-child(5), .navMenuLeft li:nth-child(7) {
+    border: 0;
+}
+.navMenuLeft li a {
+    color: white;
+}
+
+

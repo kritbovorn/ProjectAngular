@@ -1,0 +1,46 @@
+
+.head {
+    background: rgb(241, 98, 82);
+}
+.headerMenu {
+    width: 1200px;
+    margin: 0 auto;
+    height: 40px;
+
+    padding: 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+}
+
+.headerSearchBar {
+    color: white;
+    width: 1200px;
+    margin: 0 auto;
+    height: 80px;
+
+    /* padding: 1rem; */
+
+    display: grid;
+    grid-template-columns: 3fr 7fr 2fr;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    display: flex;
+    align-items: center;
+
+}
+.logo b {
+    padding-left: 0.5rem;
+}
+
+.basket {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}

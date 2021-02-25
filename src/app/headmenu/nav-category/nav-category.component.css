@@ -1,0 +1,13 @@
+.navCategory {
+    color: white;
+    display: flex;
+}
+
+.navCategory li {
+    padding: 5px;
+}
+
+.navCategory li a {
+    color: white;
+    font-size: 11px;
+}

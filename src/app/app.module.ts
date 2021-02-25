@@ -4,13 +4,28 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+//
+import { FormsModule} from '@angular/forms';
+import { HeadMenuComponent } from './headmenu/head-menu/head-menu.component';
+import { NavMenuLeftComponent } from './headmenu/nav-menu-left/nav-menu-left.component';
+import { NavMenuRightComponent } from './headmenu/nav-menu-right/nav-menu-right.component';
+import { SearchBarComponent } from './headmenu/search-bar/search-bar.component';
+import { NavCategoryComponent } from './headmenu/nav-category/nav-category.component';
+//
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeadMenuComponent,
+    NavMenuLeftComponent,
+    NavMenuRightComponent,
+    SearchBarComponent,
+    NavCategoryComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
