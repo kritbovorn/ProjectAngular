@@ -1,0 +1,6 @@
+
+<hr>
+<div class="mainContent" *ngFor="let num of numberArrays">
+    <p [ngClass]="num % 2 === 0 ? 'number-even' : 'number-odd'">{{ num }}</p>
+</div>
+<hr>

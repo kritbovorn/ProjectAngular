@@ -1,0 +1,18 @@
+
+.mainContent {
+    font-size: 50px;
+    font-weight: 900;
+
+    margin: 3rem;
+
+    display: grid;
+    place-content: center;
+}
+
+.number-even {
+    color: green;
+}
+
+.number-odd {
+    color: red;
+}
