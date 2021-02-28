@@ -1,3 +1,8 @@
+
+.space {
+    height: 1rem;
+}
+
 .mainContent {
     margin: 3rem;
     background: rgb(243, 239, 225);
@@ -8,3 +13,4 @@
 
     padding: 2rem;
 }
+
