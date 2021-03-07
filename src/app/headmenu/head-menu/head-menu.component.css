@@ -1,11 +1,12 @@
 
 .head {
-    background: rgb(241, 98, 82);
+    background: rgb(251, 83, 48);
+    min-height: 100px;
 }
 .headerMenu {
     width: 1200px;
     margin: 0 auto;
-    height: 40px;
+    min-height: 40px;
 
     padding: 1rem;
 
@@ -19,6 +20,9 @@
     width: 1200px;
     margin: 0 auto;
     height: 80px;
+
+    padding-top: 1rem;
+    padding-bottom: 10px;
 
     /* padding: 1rem; */
 
