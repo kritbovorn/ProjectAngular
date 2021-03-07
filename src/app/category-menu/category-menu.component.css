@@ -1,0 +1,21 @@
+.categoryIcon {
+
+    width: 1200px;
+
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+
+}
+
+.cateIcon {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.cateIcon img {
+    
+    width: 50px;
+
+    
+}

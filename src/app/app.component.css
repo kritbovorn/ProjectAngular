@@ -1,0 +1,9 @@
+
+.mainContent {
+    display: grid;
+    place-content: center;
+}
+
+.content {
+    width: 1200px;
+}
