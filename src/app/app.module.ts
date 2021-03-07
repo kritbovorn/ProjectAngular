@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { HeaderComponent } from './header/header.component';
 import { BodyContentComponent } from './body-content/body-content.component';
+import { ToDoListComponent } from './to-do-list/to-do-list.component';
 
 
 
@@ -14,7 +15,8 @@ import { BodyContentComponent } from './body-content/body-content.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    BodyContentComponent
+    BodyContentComponent,
+    ToDoListComponent
   ],
   imports: [
     BrowserModule,

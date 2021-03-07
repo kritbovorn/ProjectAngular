@@ -1,0 +1,33 @@
+
+<div class="mainContent">
+
+    <h1>My Tasks today.</h1>
+
+    <ul class="content" *ngFor="let task of tasks">
+        
+        <li>{{ task }}</li>
+        
+    </ul>
+
+    
+
+    <div class="form">
+
+        <div>
+            <mat-form-field hintLabel="กรุณากรอก List กิจกรรมประจำวันนี้" appearance="fill">
+                <mat-label></mat-label>
+                <input matInput #input maxlength="" placeholder="ดูภาพยนต์">
+            </mat-form-field>
+        </div>
+        <div class="alignButton">
+            <mat-card-actions>
+    
+                <button mat-raised-button color="primary" (click)="addTask()">บันทึก</button>
+                
+                
+            </mat-card-actions>
+        </div>
+
+    </div>
+
+</div>
