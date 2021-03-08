@@ -1,5 +1,7 @@
+import { formatCurrency } from '@angular/common';
 import { stringify } from '@angular/compiler/src/util';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-to-do-list',
@@ -8,17 +10,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToDoListComponent implements OnInit {
 
-  tasks: string[] = [];
+  @Input() task: string = "";
 
+  tasks: string[] = [];
 
   constructor() { }
 
   addTask() {
+  
+    this.tasks.push(this.task);
+    this.task = "";
     
-    this.tasks.push("input");
   }
+  
 
   ngOnInit(): void {
+
   }
 
 }

@@ -14,15 +14,15 @@
     <div class="form">
 
         <div>
-            <mat-form-field hintLabel="กรุณากรอก List กิจกรรมประจำวันนี้" appearance="fill">
-                <mat-label></mat-label>
-                <input matInput #input maxlength="" placeholder="ดูภาพยนต์">
+            <mat-form-field hintLabel="กรุณากรอก List กิจกรรมประจำวันนี้" appearance="fill" color="primary">
+                <mat-label>กิจกรรม</mat-label>
+                <input matInput placeholder="" [(ngModel)]="task">
             </mat-form-field>
         </div>
-        <div class="alignButton">
+        <div class="alignButton"  >
             <mat-card-actions>
     
-                <button mat-raised-button color="primary" (click)="addTask()">บันทึก</button>
+                <button  mat-raised-button color="primary" (click)="addTask()" >บันทึก</button>
                 
                 
             </mat-card-actions>
