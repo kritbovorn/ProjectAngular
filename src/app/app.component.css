@@ -1,0 +1,61 @@
+
+
+
+.page {
+    height: 850px;
+
+    display: grid;
+    grid-template-rows: repeat(24, 1fr);
+    grid-template-columns: repeat(24, 1fr);
+}
+
+.line {
+    height: 3px;
+    /* width: 100%; */
+    background: rgb(234, 234, 234);
+    grid-column: 1 / 25;
+}
+
+/*  */
+.header {
+    background: url("../assets/img/background.png") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+    grid-row: 1 / 13;
+    grid-column: 1 / 25;
+}
+
+/*  */
+.content1 {
+    background: rgb(247, 247, 247);
+
+    grid-column: 1 / 25;
+    grid-row: 13 / 25;
+}
+
+/*  */
+.searchBar {
+    height: 60px;
+    background: white;
+    
+    grid-column: 4 / 22;
+    grid-row: 12 / 14;
+
+    border: 1px solid rgb(145, 33, 33);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #888888;
+
+}
+
+/*  */
+.content2 {
+    height: 460px;;
+}
+
+/*  */
+.footer {
+    height: 460px;
+    background: rgb(247, 247, 247);
+}
+
