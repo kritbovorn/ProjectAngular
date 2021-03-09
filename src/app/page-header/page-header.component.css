@@ -9,11 +9,14 @@
 
 .header {
     background: url("../../assets/img/background.png") no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
     overflow: hidden;
 
     grid-row: 1 / 13;
     grid-column: 1 / 25;
+
+    display: grid;
+    grid-template-rows: 18% 67% 15%;
 }
 
 /*  */
@@ -32,7 +35,7 @@
     grid-column: 4 / 22;
     grid-row: 12 / 14;
 
-    border: 1px solid rgb(145, 33, 33);
+    /* border: 1px solid rgb(145, 33, 33); */
     border-radius: 5px;
     box-shadow: 2px 2px 5px #888888;
 
@@ -42,4 +45,124 @@
     height: 3px;
     background: rgb(234, 234, 234);
     grid-column: 1 / 25;
+}
+
+/*  */
+/*  */
+/*  */
+
+.headMenuAndLogo {
+    /* height: 20px; */
+
+    display: grid;
+    grid-template-columns: 2fr 7fr 3fr;
+    /* align-content: center; */
+    align-items: center;
+}
+.headMenuAndLogo img {
+    /* width: 100%; */
+    height: 40px;
+}
+
+.imageLogo {
+    display: grid;
+    place-content: center;
+}
+
+.rightMenu {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
+}
+
+.rightMenu ul {
+    list-style-type: none;
+    color: white;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* align-content: end; */
+    justify-self: end;
+
+    align-content: center;
+}
+.rightMenu button {
+    color: red;
+    border: none;
+    border-radius: 6px;
+
+    padding: 14px 12px;
+
+    -moz-box-shadow:    inset 0 0 5px #362828;
+    -webkit-box-shadow: inset 0 0 5px #362828;
+    box-shadow:         inset 0 0 5px #362828;
+}
+
+
+
+
+.headContent {
+    
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: 60% 40%;
+
+    /* align-items: center; */
+}
+.headContent p {
+    font-size: 16px;
+    color: white;
+    letter-spacing: 0.5px;
+}
+.headContent p:first-child {
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+.headContentFirst {
+
+    grid-column: 4 / 22;
+
+    display: grid;
+    align-content: center;
+    
+}
+.headContentSecond {
+    grid-column: 4 / 22;
+}
+
+.headContentSecond button {
+
+    width: 180px;
+    margin-right: 1rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    color: white;
+
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.headContentSecond button:nth-child(1) {
+    color: rgb(225, 51, 61);
+}
+.headContentSecond button:nth-child(2) {
+    background: red;
+ 
+}
+
+
+
+
+
+/* Search Bar  */
+
+.searchBar {
+
+    display: grid;
+    align-content: center;
+}
+
+.searchBar h4 {
+    color: rgb(169, 169, 169);
+    padding-left: 2rem;
 }
