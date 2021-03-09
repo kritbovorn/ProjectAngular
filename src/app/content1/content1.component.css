@@ -1,0 +1,8 @@
+.content {
+    height: 220px;
+    width: 1200px;
+    color: rgb(101, 101, 101);
+
+    display: grid;
+    align-content: center;
+}

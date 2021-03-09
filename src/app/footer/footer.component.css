@@ -2,4 +2,40 @@
 .footer {
     height: 460px;
     background: rgb(247, 247, 247);
+
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(12, 1fr);
 }
+.footerContent {
+
+    color: rgb(120, 120, 120);
+
+    grid-column: 4 / 19;
+    grid-row: 2 / 13;
+
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+}
+.footerContent p:nth-child(1) {
+    padding-bottom: 1rem;
+    font-size: 18px;
+}
+
+.footerButton {
+    margin-top: 1.5rem;
+}
+.footerButton button {
+
+    width: 180px;
+    margin-right: 1rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    color: white;
+
+    background: rgb(225, 51, 61);
+
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
