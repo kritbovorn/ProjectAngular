@@ -22,6 +22,12 @@ export class ToDoListComponent implements OnInit {
     this.task = "";
     
   }
+
+  deleteItem(task: string) {
+
+    let index: number = this.tasks.indexOf(task);
+    this.tasks.slice(index, 1);
+  }
   
 
   ngOnInit(): void {

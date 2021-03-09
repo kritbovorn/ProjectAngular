@@ -3,9 +3,17 @@
 
     <h1>My Tasks today.</h1>
 
-    <ul class="content" *ngFor="let task of tasks">
+    <ul class="content" *ngFor="let task of tasks";>
         
-        <li>{{ task }}</li>
+        <div class="contentList">
+            <li>{{ task }}</li>
+
+            <div class="contentButton">
+                <button mat-fab color="warn" (click)="deleteItem(task)">Delete</button>
+            </div>
+
+            <div class="line"></div>
+        </div>
         
     </ul>
 
