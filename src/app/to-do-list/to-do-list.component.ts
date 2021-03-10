@@ -23,10 +23,9 @@ export class ToDoListComponent implements OnInit {
     
   }
 
-  deleteItem(task: string) {
-
-    let index: number = this.tasks.indexOf(task);
-    this.tasks.slice(index, 1);
+  deleteItem(indexTask: number) {
+    
+    this.tasks.splice(indexTask, 1);
   }
   
 
