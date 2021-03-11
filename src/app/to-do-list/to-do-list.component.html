@@ -1,41 +1,46 @@
+<h1>TodoListComponent</h1>
 
-<div class="mainContent">
+
+<div class="todoList">
 
     <h1>My Tasks today.</h1>
 
-    <ul class="content" *ngFor="let task of tasks; let indexTask = index;">
-        
-        <div class="contentList">
-            <li>{{ task }}</li>
+    <div class="todo">
 
-            <div class="contentButton">
-                <button mat-fab color="warn" (click)="deleteItem(indexTask)">Delete</button>
+        <ul class="content" *ngFor="let task of tasks; let indexTask = index;">
+
+            <div class="contentList">
+                <li>{{ task }}</li>
+    
+                <div class="contentButton">
+                    <button mat-fab color="warn" (click)="deleteItem(indexTask)">Delete</button>
+                </div>
+    
+                <div class="line"></div>
             </div>
-
-            <div class="line"></div>
+    
+        </ul>
+    
+    
+    
+        <div class="form">
+    
+            <div>
+                <mat-form-field hintLabel="กรุณากรอก List กิจกรรมประจำวันนี้" appearance="fill" color="primary">
+                    <mat-label>กิจกรรม</mat-label>
+                    <input matInput placeholder="" [(ngModel)]="task">
+                </mat-form-field>
+            </div>
+            <div class="alignButton">
+                <mat-card-actions>
+    
+                    <button mat-raised-button color="primary" (click)="addTask()">บันทึก</button>
+    
+    
+                </mat-card-actions>
+            </div>
+    
         </div>
         
-    </ul>
-
-    
-
-    <div class="form">
-
-        <div>
-            <mat-form-field hintLabel="กรุณากรอก List กิจกรรมประจำวันนี้" appearance="fill" color="primary">
-                <mat-label>กิจกรรม</mat-label>
-                <input matInput placeholder="" [(ngModel)]="task">
-            </mat-form-field>
-        </div>
-        <div class="alignButton"  >
-            <mat-card-actions>
-    
-                <button  mat-raised-button color="primary" (click)="addTask()" >บันทึก</button>
-                
-                
-            </mat-card-actions>
-        </div>
-
     </div>
-
 </div>

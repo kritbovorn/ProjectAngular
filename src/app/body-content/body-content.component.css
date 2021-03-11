@@ -1,9 +1,9 @@
 .body {
-    width: 700px;
+    width: 900px;
     background: rgb(251, 244, 238);
     border-radius: 20px;
     
-    padding: 2rem;
+    padding: 5rem;
 }
 
 .counting {

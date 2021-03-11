@@ -8,6 +8,7 @@ import { MaterialModule } from './material/material.module';
 import { HeaderComponent } from './header/header.component';
 import { BodyContentComponent } from './body-content/body-content.component';
 import { ToDoListComponent } from './to-do-list/to-do-list.component';
+import { TaskComponent } from './Task/task/task.component';
 
 
 
@@ -16,7 +17,8 @@ import { ToDoListComponent } from './to-do-list/to-do-list.component';
     AppComponent,
     HeaderComponent,
     BodyContentComponent,
-    ToDoListComponent
+    ToDoListComponent,
+    TaskComponent
   ],
   imports: [
     BrowserModule,
