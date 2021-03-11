@@ -1,0 +1,22 @@
+
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.alignButton {
+    display: grid;
+    justify-content: start;
+}
+
+.contentList {
+    height: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.contentButton {
+    display: grid;
+    place-content: end;
+}

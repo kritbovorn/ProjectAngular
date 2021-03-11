@@ -1,7 +1,6 @@
-import { formatCurrency } from '@angular/common';
-import { stringify } from '@angular/compiler/src/util';
+
 import { Component, OnInit, Input } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { Task } from '../task';
 
 @Component({
   selector: 'app-to-do-list',
@@ -10,24 +9,11 @@ import { NgForm } from '@angular/forms';
 })
 export class ToDoListComponent implements OnInit {
 
-  @Input() task: string = "";
+  tasks: Task[] = [];
 
-  tasks: string[] = [];
+  task: Task = new Task();
 
   constructor() { }
-
-  addTask() {
-  
-    this.tasks.push(this.task);
-    this.task = "";
-    
-  }
-
-  deleteItem(indexTask: number) {
-    
-    this.tasks.splice(indexTask, 1);
-  }
-  
 
   ngOnInit(): void {
 

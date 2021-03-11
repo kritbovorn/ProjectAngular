@@ -1,0 +1,13 @@
+<ul class="content" *ngFor="let task of tasks; let indexTask = index;">
+
+    <div class="contentList">
+        <li>{{ task }}</li>
+
+        <div class="contentButton">
+            <button mat-fab color="warn" (click)="deleteItem(indexTask)">Delete</button>
+        </div>
+
+        <div class="line"></div>
+    </div>
+
+</ul>

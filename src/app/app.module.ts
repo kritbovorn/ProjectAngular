@@ -8,7 +8,9 @@ import { MaterialModule } from './material/material.module';
 import { HeaderComponent } from './header/header.component';
 import { BodyContentComponent } from './body-content/body-content.component';
 import { ToDoListComponent } from './to-do-list/to-do-list.component';
-import { TaskComponent } from './Task/task/task.component';
+import { ContentTaskComponent } from './content-task/content-task.component';
+import { ContentFormComponent } from './content-form/content-form.component';
+import { ContentDescriptionComponent } from './content-description/content-description.component';
 
 
 
@@ -18,7 +20,9 @@ import { TaskComponent } from './Task/task/task.component';
     HeaderComponent,
     BodyContentComponent,
     ToDoListComponent,
-    TaskComponent
+    ContentTaskComponent,
+    ContentFormComponent,
+    ContentDescriptionComponent
   ],
   imports: [
     BrowserModule,
