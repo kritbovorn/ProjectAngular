@@ -1,0 +1,33 @@
+<p>{{ title }}</p>
+
+<div>
+    Set Title: <input [(ngModel)]="title">
+</div>
+
+<div class="line"></div>
+
+<div class="space"></div>
+
+
+
+<div class="space"></div>
+
+<ul>
+    <li *ngFor="let item of items">
+        <p *ngIf="item % 2 == 0">{{ item }}</p>
+        <h1 *ngIf="item %2 != 0">{{ item }}</h1>
+    </li>
+</ul>
+
+<div class="line"></div>
+
+<h1>Boie</h1>
+
+<div>
+    <h2>{{ count }}</h2>
+    <p>
+        <button (click)="countUp()">Count Up</button>
+        <button (click)="countDown()">Count Down</button>
+    </p>
+</div>
+

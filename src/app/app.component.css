@@ -1,0 +1,22 @@
+.mainPage {
+    background: burlywood;
+    
+    min-height: 500px;
+    display: grid;
+    
+    place-items: center;
+
+    margin: 2rem;
+    padding: 1rem;
+
+}
+
+.main {
+    background: rgb(211, 146, 62);
+    width: 100%;
+
+    display: grid;
+    place-items: center;
+
+    padding: 2rem;
+}

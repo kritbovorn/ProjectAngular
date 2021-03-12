@@ -1,0 +1,9 @@
+
+
+<h1>Today is: {{ currentDate | date : 'dd : MM : yyyy'}}</h1>
+
+<div class="lab4">
+    <h1 [ngClass]="item % 2 == 0 ? 'number-even' : 'nuber-odd'" *ngFor="let item of items">{{ item }}</h1>
+</div>
+
+

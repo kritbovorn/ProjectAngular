@@ -1,0 +1,9 @@
+<div class="todoList">
+
+    <app-todo-content *ngFor="let task of tasks" [task]="task"></app-todo-content>
+
+    <app-todo-form (OnSelected)="selectedTask($event)"></app-todo-form>
+
+    <p *ngFor="let task of tasks">{{ task }}</p>
+
+</div>

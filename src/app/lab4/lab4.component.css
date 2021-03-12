@@ -1,0 +1,17 @@
+
+.lab4 {
+    display: grid;
+    place-items: center;
+
+    padding: 2rem;
+   
+}
+
+.number-even {
+    color: green;
+    font-weight: bold;
+}
+.nuber-odd {
+    color: red;
+    
+}
