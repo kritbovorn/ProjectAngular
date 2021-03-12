@@ -7,19 +7,15 @@ import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { CountingComponent } from './counting/counting.component';
 import { Lab4Component } from './lab4/lab4.component';
-import { TodoListComponent } from './todo-list/todo-list.component';
-import { TodoFormComponent } from './todo-form/todo-form.component';
-import { TodoContentComponent } from './todo-content/todo-content.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CountingComponent,
-    Lab4Component,
-    TodoListComponent,
-    TodoFormComponent,
-    TodoContentComponent
+    Lab4Component
+    
   ],
   imports: [
     BrowserModule,
