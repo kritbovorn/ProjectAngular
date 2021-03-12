@@ -1,0 +1,13 @@
+
+.addButton {
+    margin-top: 2rem;
+}
+.addButton button {
+    padding: 1rem 2rem;
+    background: rgb(37, 7, 228);
+    color: whitesmoke;
+
+    border: none;
+    border-radius: 8px;
+    box-shadow: rgb(52, 168, 6) 0px 0px 5px;
+}

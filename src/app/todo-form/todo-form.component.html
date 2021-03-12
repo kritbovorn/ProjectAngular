@@ -1,5 +1,6 @@
 <div class="todoForm">
 
     Add Task: <input [(ngModel)]="task">
-    <button (click)="sendTask()">Add</button>
+
+    <app-add-button (click)="sendTask()" [title]="'Add'"></app-add-button>
 </div>

@@ -10,6 +10,8 @@ import { Lab4Component } from './lab4/lab4.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { TodoTaskComponent } from './todo-task/todo-task.component';
 import { TodoFormComponent } from './todo-form/todo-form.component';
+import { AddButtonComponent } from './add-button/add-button.component';
+import { DeleteButtonComponent } from './delete-button/delete-button.component';
 
 
 
@@ -21,7 +23,9 @@ import { TodoFormComponent } from './todo-form/todo-form.component';
     Lab4Component,
     TodoListComponent,
     TodoTaskComponent,
-    TodoFormComponent
+    TodoFormComponent,
+    AddButtonComponent,
+    DeleteButtonComponent
     
   ],
   imports: [

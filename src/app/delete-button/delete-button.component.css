@@ -1,0 +1,16 @@
+
+.deleteButton {
+    display: grid;
+    place-items: end;
+}
+.deleteButton button {
+    padding: 10px 12px;
+    margin: 5px;
+
+    background: red;
+    border: none;
+    border-radius: 12px;
+    box-shadow: rgb(52, 168, 6) 0px 0px 5px;
+
+    
+}
