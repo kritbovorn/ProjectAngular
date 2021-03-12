@@ -7,6 +7,10 @@ import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { CountingComponent } from './counting/counting.component';
 import { Lab4Component } from './lab4/lab4.component';
+import { TodoListComponent } from './todo-list/todo-list.component';
+import { TodoTaskComponent } from './todo-task/todo-task.component';
+import { TodoFormComponent } from './todo-form/todo-form.component';
+
 
 
 @NgModule({
@@ -14,7 +18,10 @@ import { Lab4Component } from './lab4/lab4.component';
     AppComponent,
     HomeComponent,
     CountingComponent,
-    Lab4Component
+    Lab4Component,
+    TodoListComponent,
+    TodoTaskComponent,
+    TodoFormComponent
     
   ],
   imports: [
