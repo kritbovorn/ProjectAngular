@@ -2,7 +2,7 @@
 
     <h2>{{ task }}</h2>
 
-    <app-delete-button [title]="'Delete'"></app-delete-button>
+    <app-delete-button (click)="sendDelete(task)" [title]="'Delete'"></app-delete-button>
 
  </div>
  <div class="line"></div>
