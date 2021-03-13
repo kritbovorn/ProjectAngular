@@ -1,6 +1,6 @@
 <div class="todoList">
 
-    <app-todo-task (OnDeleteTask)="deleteTask($event)" *ngFor="let task of tasks" [task]="task"></app-todo-task >
+    <app-todo-task (OnDeleteTask)="deleteTask($event)" *ngFor="let task of tasks; index as i" [index]="i" [task]="task"> </app-todo-task >
 
     <app-todo-form (OnSelected)="addTask($event)"></app-todo-form>
 

@@ -7,18 +7,21 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class TodoTaskComponent implements OnInit {
 
+  @Input()  index: number = 0; 
   @Input() task: string = "";
+  
  
 
-  @Output() OnDeleteTask: EventEmitter<string> = new EventEmitter<string>();
+  @Output() OnDeleteTask: EventEmitter<number> = new EventEmitter<number>();
   
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  sendDelete(task: string) {
-    this.OnDeleteTask.emit(task);
+  sendDelete(index: number) {
+    console.log(index);
+    this.OnDeleteTask.emit(index);
   }
 
 }

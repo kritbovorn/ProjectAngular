@@ -19,8 +19,8 @@ export class TodoListComponent implements OnInit {
     
   }
 
-  deleteTask(task: string) {
-    let index = this.tasks.indexOf(task);
+  deleteTask(index:number) {
+    
     this.tasks.splice(index, 1);
   }
 
